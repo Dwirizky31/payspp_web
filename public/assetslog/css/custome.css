@@ -1,0 +1,119 @@
+body,html{
+	overflow-x: hidden;
+	overflow-y: hidden;
+	font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid #cef;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0,0.2,0.8,1) infinite;
+}
+.lds-ripple {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+}
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid #cef;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0,0.2,0.8,1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+    animation-delay: -.5s;
+}
+.lds-loading {
+    display: block;
+    position: absolute;
+    top: 57%;
+    left: 49%;
+    width: 120px;
+    height: 64px;
+}
+.box-lds{display:none;position:fixed;top:0;width:100%;height:100%;background-color:#000;opacity:.5;-webkit-opacity:.5;-moz-opacity:.5;filter:alpha(opacity=50);z-index:1060}
+.lds-ripple{display:block;position:absolute;top:50%;left:50%;width:64px;height:64px}
+.lds-loading{display:block;position:absolute;top:57%;left:49%;width:10%;height:64px}
+.lds-ripple div{position:absolute;border:4px solid #cef;opacity:1;border-radius:50%;animation:lds-ripple 1s cubic-bezier(0,0.2,0.8,1) infinite}
+.lds-ripple div:nth-child(2){animation-delay:-.5s}
+@keyframes lds-ripple {
+    0%{top:28px;left:28px;width:0;height:0;opacity:1}
+    100%{top:-1px;left:-1px;width:58px;height:58px;opacity:0}
+}
+.loginform{
+	background: linear-gradient( to left, rgba(255,255,255, 0.8), #fff );
+}
+.deskmin{
+	display: none;
+}
+@media all and (min-width: 1024px) {
+	.is-gradient{
+		background:url(../images/bg.jpg);		
+		
+	}
+	.logoKiri{
+		height: 170px;
+		width: 175px;
+		margin: 20px;
+		opacity: 0.8;
+		background-size: cover;
+	}
+	.logoKanan{
+		height: 158px;
+		width: 200px;
+		margin: 20px;
+		right: 10px;
+		position: absolute;
+		opacity: 0.8;
+		background-size: cover;
+	}
+	.hero-body .container .columns.is-centered{
+	}
+}
+
+@media all and (max-width: 1023px) {
+	.loginform{
+		background: linear-gradient( to left, rgba(255,255,255, 0.8), #fff );
+	}
+	.is-gradient{
+		background: linear-gradient( to left, rgba(255,254,255, 0.1), #3766d1d1 ),url(../images/bgsmall.png) no-repeat left top,url(../images/bgr.png) no-repeat right bottom;
+	}
+}
+@media all and (max-width: 450px) {
+	.desk{
+		display: none;
+	}
+	.deskmin{
+		display: block;
+	}
+}
+.lgo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.lgo img{
+	height: 75px;
+	width: 75px;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
